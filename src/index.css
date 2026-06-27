@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/* Adding a custom scrollbar for that dark theme feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0b1320;
+}
+::-webkit-scrollbar-thumb {
+  background: #06b6d4;
+  border-radius: 4px;
+}
