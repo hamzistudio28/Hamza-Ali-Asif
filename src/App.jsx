@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// Changed BrowserRouter to HashRouter here!
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'; 
 
 // Layout Components
 import Navbar from './components/Navbar';
@@ -15,8 +16,8 @@ import Resume from './components/Resume';
 
 function App() {
   return (
-    {/* ADDED BASENAME HERE: This tells React Router to ignore the repository name in the URL */}
-    <Router basename="/Hamza-Ali-Asif">
+    // The Router wrapper is much simpler now
+    <Router>
       <div className="bg-[#0b1320] text-white min-h-screen font-sans selection:bg-cyan-500 selection:text-white flex flex-col">
         <Navbar />
         
