@@ -15,7 +15,8 @@ import Resume from './components/Resume';
 
 function App() {
   return (
-    <Router>
+    {/* ADDED BASENAME HERE: This tells React Router to ignore the repository name in the URL */}
+    <Router basename="/Hamza-Ali-Asif">
       <div className="bg-[#0b1320] text-white min-h-screen font-sans selection:bg-cyan-500 selection:text-white flex flex-col">
         <Navbar />
         
